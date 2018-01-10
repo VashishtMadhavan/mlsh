@@ -46,7 +46,7 @@ LOGDIR = osp.join('/root/results' if sys.platform.startswith('linux') else '/tmp
 def callback(it):
     if MPI.COMM_WORLD.Get_rank()==0:
         if it % 5 == 0 and it > 3 and not replay:
-            fname = osp.join("savedir/", 'checkpoints', '%.5i'%it)
+            fname = osp.join("savedir/%s/" % args.savename, 'checkpoints', '%.5i'%it)
             U.save_state(fname)
     if it == 0 and args.continue_iter is not None:
         fname = osp.join("savedir/"+args.savename+"/checkpoints/", str(args.continue_iter))

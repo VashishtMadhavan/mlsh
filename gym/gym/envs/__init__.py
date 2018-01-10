@@ -1,5 +1,34 @@
 from gym.envs.registration import registry, register, make, spec
 
+# MLSH Envs
+# ----------------------------------------
+
+register(
+    id='MovementBandits-v0',
+    entry_point='gym.envs.test_envs:MovementBandits',
+    timestep_limit=50,
+)
+
+register(
+    id='KeyDoor-v0',
+    entry_point='gym.envs.test_envs:KeyDoor',
+    timestep_limit=100,
+)
+
+register(
+    id='Allwalk-v0',
+    entry_point='gym.envs.test_envs:Allwalk',
+    timestep_limit=50,
+)
+
+register(
+    id='Fourrooms-v0',
+    entry_point='gym.envs.test_envs:Fourrooms',
+    timestep_limit=100,
+    reward_threshold = 1,
+)
+
+
 # Algorithmic
 # ----------------------------------------
 

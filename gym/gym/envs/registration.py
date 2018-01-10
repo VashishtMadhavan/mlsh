@@ -3,6 +3,7 @@ import pkg_resources
 import re
 from gym import error
 import warnings
+import pdb
 
 logger = logging.getLogger(__name__)
 # This format is true today, but it's *not* an official spec.
