@@ -1,0 +1,7 @@
+*.DS_Store
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+*.crc
+*.csv
